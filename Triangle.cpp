@@ -15,22 +15,16 @@ Triangle::Triangle()
 }
 Triangle::Triangle(GenPoint a, GenPoint b, GenPoint c, Color color)
 {
-	this->a.setPoint(0,0);
-	this->b.setPoint(0,0);
-	this->c.setPoint(0,0);
-	
-	this->color.setColor(0,0,0);
-
-
+	this->a.setPoint(a.getX(), a.getY());
+	this->b.setPoint(b.getX(), b.getY());
+	this->c.setPoint(c.getX(), c.getY());
+	this->color.setColor(color.getRed(),color.getGreen(),color.getBlue());
 }
 void Triangle::setPoints(GenPoint a, GenPoint b, GenPoint c)
 {
 	a.setPoint(a.getX(),a.getY());
 	b.setPoint(b.getX(),b.getY());
 	c.setPoint(c.getX(),b.getY());
-
-
-
 	this->color.setColor(color.getRed(),color.getGreen(),color.getBlue());
 }
 double Triangle::getArea()
@@ -69,7 +63,7 @@ void Triangle::print()
 	gout<<setPos(200,420)<<"Point a: ("<<a.getX()<<","<<a.getY()<<")"<<endg;
 	gout<<setPos(200,435)<<"Point b: ("<<b.getX()<<","<<b.getY()<<")"<<endg;
 	gout<<setPos(200,450)<<"Point c: ("<<c.getX()<<","<<c.getY()<<")"<<endg;
-	gout<<setPos(200,480)<<"Perimeter: "<<getPerimeter()<<" "<<"Area: "<<getArea()<<endg;
+	gout<<setPos(200,465)<<"Perimeter: "<<getPerimeter()<<" "<<"Area: "<<getArea()<<endg;
 }
 void Triangle::draw()
 {

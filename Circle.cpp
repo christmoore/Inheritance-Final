@@ -5,7 +5,7 @@
 #include "Color.h"
 #include "graph1.h"
 
-
+const double Circle::PI = 3.14159265;
 Circle::Circle()
 {
 	radius = 0;
@@ -15,11 +15,11 @@ Circle::Circle(GenPoint center, int radius, Color c)
 {
 	this->center = center;
 	this->radius = radius;
-	c.setColor(c.getRed, c.getGreen, c.getBlue);
+	color.setColor(c.getRed(), c.getGreen(), c.getBlue());
 }
 void Circle::setCenter(GenPoint center)
 {
-	center.setPoint(center.getX, center.getY);
+	center.setPoint(center.getX(), center.getY());
 }
 void Circle::setRadius(int radius)
 {
@@ -42,23 +42,23 @@ double Circle::getArea()
 }
 void Circle::print()
 {
-	gout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endg;
-	setPos(0, 400);
+	gout << setPos(0, 400) << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endg;
+	
 
-	gout << "Shape info Follows for: Circle" << endg;
-	setPos(200, 405);
+	gout << setPos(200, 405) << "Shape info Follows for: Circle" << endg;
+	
 
-	gout << "Center Point: " << center.getX << " " << center.getY << endg;
-	setPos(200, 420);
+	gout << setPos(200, 420)<< "Center Point: " << center.getX() << " " << center.getY() << endg;
+	
 
-	gout << "Radius: " << radius << endg;
-	setPos(200, 435);
-
-	gout << "Perimeter: " << getPerimeter() << endg;
-	setPos(200, 450);
+	gout << setPos(200, 435) << "Radius: " << radius << endg;
+	
+	gout << setPos(200, 450)<< "Perimeter: " << getPerimeter() << endg;
 }
 void Circle::draw()
 {
-	drawCircle(radius, center.getX(), center.getY());
+	int object;
+	object = drawCircle(radius, center.getX(), center.getY());
+	::setColor(object, color.getRed(), color.getGreen(), color.getBlue());
 
 }

@@ -1,8 +1,8 @@
 #ifndef QUADRILATERAL_H
-#def QUADRILATERAL_H
+#define QUADRILATERAL_H
 #include "GenPoint.h"
 #include "Color.h"
-
+#include "Shape.h"
 class Quadrilateral : public Shape
 {
   protected:

@@ -27,9 +27,10 @@ void Trapezoid::setPoints(GenPoint a, GenPoint b, GenPoint c, GenPoint d)
 }
 double Trapezoid::getArea()
 {
-	double height = sqrt(pow(a.getX() - c.getX(), 2) + pow(a.getY() - c.getY(), 2));
-	double base1 = sqrt(pow(a.getX() - b.getX(), 2)+pow(a.getY()- b.getY(), 2));
-	double base2 = sqrt(pow(c.getX() - d.getX(), 2)+pow(c.getY()- d.getY(), 2));
+
+	double base1 = sqrt(pow(a.getX() - b.getX(), 2.0)+pow(a.getY()- b.getY(), 2.0));
+	double base2 = sqrt(pow(c.getX() - d.getX(), 2.0)+pow(c.getY()- d.getY(), 2.0));
+	double height = abs(c.getY() - a.getY());
 	double area = 0.5 *(base1+base2)*height;
 	return area;
 }
