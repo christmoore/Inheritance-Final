@@ -1,13 +1,15 @@
 #include "Shape.h"
 
 
-Shape()
+Shape::Shape()
 {
+	color.setColor(0, 0, 0);
 } //Default Constructor - sets color to (0,0,0)
-Color getColor()
+Color Shape::getColor()
 {
+	return color;
 }//Getter for Color
-void setColor(Color color)
+void Shape::setColor(Color color)
 {
+	color.setColor(color.getRed(), color.getGreen(), color.getBlue());
 }//Setter for Color
-
