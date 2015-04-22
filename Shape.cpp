@@ -1,11 +1,13 @@
 #include "Shape.h"
 
 
-Shape::Shape(void)
+Shape()
 {
-}
-
-
-Shape::~Shape(void)
+} //Default Constructor - sets color to (0,0,0)
+Color getColor()
 {
-}
+}//Getter for Color
+void setColor(Color color)
+{
+}//Setter for Color
+
