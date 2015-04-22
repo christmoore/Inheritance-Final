@@ -1,3 +1,5 @@
+#ifndef QUADRILATERAL_H
+#def QUADRILATERAL_H
 #include "GenPoint.h"
 #include "Color.h"
 
