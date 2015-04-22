@@ -15,3 +15,4 @@ class GenRectangle: public Quadrilateral
 };
 
 #endif
+
