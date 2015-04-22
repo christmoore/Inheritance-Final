@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include "RightTriangle.h"
 #include "Triangle.h"
@@ -21,8 +20,8 @@ RightTriangle::RightTriangle(GenPoint vertex, int height, int base, Color color)
 	vertex.setPoint(a.getX(),a.getY());
 	
 
-	b.setPoint(a.getX(),a.getY()+height);
-	c.setPoint(a.getX()+base,a.getY());
+	b.setPoint(vertex.getX(),vertex.getY()+height);
+	c.setPoint(vertex.getX()+base,vertex.getY());
 
 
 	this->color.setColor(color.getRed(),color.getGreen(),color.getBlue());
