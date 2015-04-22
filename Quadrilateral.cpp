@@ -5,10 +5,10 @@
 
 Quadrilateral::Quadrilateral()
  {
-	 a.setPoint(0,0);
-	 b.setPoint(0,0);
-	 c.setPoint(0,0);
-	 d.setPoint(0,0);
+	 this->a.setPoint(0,0);
+	 this->b.setPoint(0,0);
+	 this->c.setPoint(0,0);
+	 this->d.setPoint(0,0);
  }
 
 Quadrilateral::Quadrilateral(GenPoint a, GenPoint b, GenPoint c, GenPoint d, Color color)
