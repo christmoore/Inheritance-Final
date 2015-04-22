@@ -1,11 +1,26 @@
 #include "Triangle.h"
 
 
-Triangle::Triangle(void)
+
+
+Triangle::Triangle()
 {
 }
-
-
-Triangle::~Triangle(void)
+Triangle::Triangle(GenPoint a, GenPoint b, GenPoint c, Color color)
+{
+}
+void Triangle::setPoints(GenPoint a, GenPoint b, GenPoint c)
+{
+}
+double Triangle::getArea()
+{
+}
+double Triangle::getPerimeter()
+{
+}
+void Triangle::print()
+{
+}
+void Triangle::draw()
 {
 }
