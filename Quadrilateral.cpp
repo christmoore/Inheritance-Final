@@ -30,7 +30,7 @@ void Quadrilateral::setPoints(GenPoint a, GenPoint b, GenPoint c, GenPoint d)
 
 double Quadrilateral::getPerimeter()
  {
-	 double per = (((a.getY() - d.getY())*2) + ((b.getX() - a.getX())*2));
+	 double per = (((d.getY() - a.getY())*2) + ((b.getX() - a.getX())*2));
 
 	 return (per);
  }
