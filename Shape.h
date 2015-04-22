@@ -8,7 +8,6 @@ class Shape
 {
   protected:
     Color color;  //Color class used in lab9in
-       
   public:
     Shape();  //Default Constructor - sets color to (0,0,0)
     Color getColor();  //Getter for Color
