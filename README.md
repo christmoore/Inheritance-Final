@@ -20,3 +20,7 @@ Illustrates Object-Oriented Programming through implementing separate objects an
 to create colored objects.
 
 Implements Third Party Library "Graph1.h"
+
+##On Compiling##
+
+You will need to unpack the classes and header folders until the include statements are changed to enable compiling without.
